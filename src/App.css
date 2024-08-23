@@ -1,0 +1,249 @@
+/* Reseta margens e preenchimentos padrão, define box-sizing e fonte global */
+* {
+  margin: 0; /* Remove a margem padrão dos elementos */
+  padding: 0; /* Remove o preenchimento padrão dos elementos */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+  font-family: Arial, sans-serif; /* Define a fonte padrão do documento */
+}
+
+/* Estiliza o contêiner geral que ocupa toda a tela */
+.container-geral {
+  height: 100vh; /* Define a altura para 100% da altura da viewport */
+  width: 100vw; /* Define a largura para 100% da largura da viewport */
+  display: flex; /* Usa Flexbox para o layout */
+  justify-content: center; /* Centraliza o contêiner interno horizontalmente */
+  align-items: center; /* Centraliza o contêiner interno verticalmente */
+  background-color: #000000; /* Define a cor de fundo do contêiner geral como preto */
+}
+
+/* Estiliza o contêiner principal */
+.container {
+  width: 80%; /* Define a largura para 80% da largura do contêiner pai */
+  height: 70%; /* Define a altura para 70% da altura do contêiner pai */
+  background: #1c1c1c; /* Define a cor de fundo como cinza escuro */
+  border-radius: 10px; /* Adiciona bordas arredondadas mais suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada ao redor do contêiner */
+  padding: 20px; /* Adiciona preenchimento interno */
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o conteúdo principal */
+.conteudo-principal {
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  height: calc(100% - 60px); /* Ajusta a altura para acomodar o botão abaixo */
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o cabeçalho superior */
+.header-top {
+  background-color: #e60012; /* Define a cor de fundo do cabeçalho como vermelho intenso */
+  color: white; /* Define a cor do texto como branca */
+  padding: 15px; /* Adiciona preenchimento interno */
+  border-radius: 10px; /* Adiciona bordas arredondadas mais suaves */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+}
+
+/* Estiliza o elemento <main> */
+main {
+  display: flex; /* Usa Flexbox para o layout */
+  width: 100%; /* Ocupa toda a largura disponível */
+  justify-content: space-between; /* Distribui espaço igual entre os itens */
+  align-items: flex-start; /* Alinha os itens ao início (superior) */
+}
+
+/* Estiliza o formulário */
+.form {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: flex-start; /* Alinha o conteúdo ao início (esquerda) */
+  align-items: flex-start; /* Alinha o conteúdo ao início (esquerda) */
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 50%; /* Ocupa 50% da largura do elemento pai */
+  margin-right: 20px; /* Adiciona espaço à direita do formulário */
+}
+
+/* Estiliza o título dentro do formulário */
+.form h1 {
+  font-size: 1.8em; /* Define o tamanho da fonte do título */
+  color: #e60012; /* Define a cor do texto como vermelho intenso */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+/* Estiliza o campo de entrada do formulário */
+.form input {
+  outline: none; /* Remove a borda de foco padrão */
+  padding: 10px; /* Adiciona preenchimento interno */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: 1px solid #333; /* Define a borda do campo de entrada como cinza escuro */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  width: 80%; /* Define a largura do campo de entrada */
+  max-width: 400px; /* Define a largura máxima do campo de entrada */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do campo de entrada */
+  background-color: #2c2c2c; /* Define o fundo do campo de entrada como cinza escuro */
+  color: white; /* Define a cor do texto dentro do campo de entrada como branca */
+}
+
+/* Estiliza o botão dentro do formulário */
+.form button {
+  padding: 10px 20px; /* Adiciona preenchimento interno */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  background-color: #e60012; /* Define a cor de fundo do botão como vermelho intenso */
+  color: white; /* Define a cor do texto como branca */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  align-self: flex-start; /* Alinha o botão à esquerda dentro do formulário */
+}
+
+/* Estiliza o botão ao passar o cursor sobre ele */
+.form button:hover {
+  background-color: #b30008; /* Muda a cor de fundo do botão para um vermelho mais escuro quando o cursor está sobre ele */
+}
+
+/* Estilo do contêiner de conteúdo */
+.conteudo {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  justify-content: flex-start; /* Alinha o conteúdo ao topo */
+  min-height: 200px; /* Define uma altura mínima para acomodar o conteúdo */
+  width: 50%; /* Ocupa 50% da largura do elemento pai */
+  background-color: #000000; /* Define a cor de fundo do contêiner de conteúdo como preto */
+  padding: 20px; /* Adiciona preenchimento interno */
+  border-radius: 10px; /* Adiciona bordas arredondadas mais suaves */
+}
+
+/* Estiliza o texto dentro da div .conteudo */
+.conteudo div {
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Define a cor do texto como branca */
+}
+
+/* Estilo da imagem dentro do contêiner de conteúdo */
+.conteudo img {
+  border-radius: 50%; /* Adiciona bordas arredondadas para formar um círculo */
+  width: 150px; /* Define a largura da imagem */
+  height: 150px; /* Define a altura da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  border: 4px solid #e60012; /* Adiciona uma borda vermelha ao redor da imagem */
+  margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave ao aumento */
+}
+
+/* Estilo aplicado ao passar o cursor sobre a imagem */
+.conteudo img:hover {
+  transform: scale(1.2); /* Aumenta a imagem em 1.2 vezes ao passar o mouse */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre a imagem */
+}
+
+
+
+
+/* Estiliza o título dentro do contêiner de conteúdo */
+.conteudo h1 {
+  font-size: 24px; /* Define o tamanho da fonte do título */
+  color: #e60012; /* Define a cor do texto como vermelho intenso */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+/* Estiliza o parágrafo dentro do contêiner de conteúdo */
+.conteudo p {
+  font-size: 1.2em; /* Define o tamanho da fonte do parágrafo */
+  color: #cccccc; /* Define a cor do texto como cinza claro */
+}
+/* Estiliza o carregamento */
+.loading-overlay {
+  position: fixed; /* Fica fixo na tela */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100vw; /* Largura completa da viewport */
+  height: 100vh; /* Altura completa da viewport */
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para maior contraste */
+  display: flex; /* Flexbox para centralizar o spinner */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1000; /* Certifica-se de que fica sobre outros elementos */
+}
+
+/* Estilo do spinner de carregamento */
+.loading-spinner {
+  border: 8px solid rgba(255, 255, 255, 0.1); /* Cor de fundo do spinner com transparência */
+  border-left: 8px solid #e60012; /* Cor da parte esquerda do spinner */
+  border-radius: 50%; /* Forma circular */
+  width: 80px; /* Largura do spinner */
+  height: 80px; /* Altura do spinner */
+  animation: spin 1.2s linear infinite; /* Animação contínua */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave ao redor do spinner */
+}
+
+/* Animação de rotação */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estiliza o botão dentro do formulário */
+.form button {
+  padding: 12px 24px; /* Aumenta o padding para um botão mais espaçoso */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 8px; /* Aumenta o border-radius para bordas mais arredondadas */
+  background-color: #e60012; /* Define a cor de fundo do botão como verde moderno */
+  color: white; /* Define a cor do texto como branca */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transições suaves para a cor e transformação */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+}
+
+/* Estiliza o botão ao passar o cursor sobre ele */
+.form button:hover {
+  background-color: #45a049; /* Muda a cor de fundo para um verde mais escuro ao passar o cursor */
+}
+
+/* Estiliza o botão ao clicar nele */
+.form button:active {
+  background-color: #388e3c; /* Muda a cor de fundo para um verde ainda mais escuro ao clicar */
+  transform: scale(0.98); /* Adiciona um efeito de clique, reduzindo um pouco o tamanho do botão */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ajusta a sombra para dar um efeito de pressionado */
+}
+
+/* Estiliza o formulário */
+.form {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: flex-start; /* Alinha o conteúdo ao início (esquerda) */
+  align-items: stretch; /* Estica os itens para ocupar toda a largura disponível */
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 100%; /* Ocupa toda a largura do elemento pai */
+  max-width: 500px; /* Define uma largura máxima para o formulário */
+  margin-right: 20px; /* Adiciona espaço à direita do formulário */
+  padding: 20px; /* Adiciona preenchimento interno */
+  background-color: #f5f5f5; /* Define a cor de fundo do formulário como cinza claro */
+  border-radius: 12px; /* Adiciona bordas arredondadas mais suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao formulário */
+}
+
+/* Estiliza os campos de entrada do formulário */
+.form input {
+  outline: none; /* Remove a borda de foco padrão */
+  padding: 12px; /* Aumenta o padding para campos mais espaçosos */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: 1px solid #ccc; /* Define a borda dos campos de entrada como cinza claro */
+  border-radius: 8px; /* Adiciona bordas arredondadas mais suaves */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 100%; /* Define a largura máxima como 100% */
+  margin-bottom: 12px; /* Adiciona espaço abaixo do campo de entrada */
+  background-color: #ffffff; /* Define o fundo do campo de entrada como branco */
+  color: #333333; /* Define a cor do texto dentro do campo de entrada como cinza escuro */
+}
+
+/* Estiliza o campo de entrada ao receber foco */
+.form input:focus {
+  border-color: #4caf50; /* Muda a cor da borda para verde quando o campo está em foco */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Adiciona uma sombra verde ao redor do campo de entrada quando em foco */
+}
